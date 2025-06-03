@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Kyle Music</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container container-sm header-flex">
+            <a class="kyle" href="index.html">Kyle</a>
+            <ul class="main-menu">
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container container-sm">
+            <h2>
+                <span class="bg-primary">Music</span>
+            </h2>
+        </div>
+    </section>
+
+    <section class="gallery">
+    <div class="container container-lg gallery-flex">
+
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item">
+            <div class="image-container">
+                <img src="images\Kyle_-_Breathe_-_CD.png" alt="Portfolio Item 1">
+                
+                <button class="play-button" data-audio="audio1"><i class="fas fa-play"></i></button>
+
+                <div class="custom-player" id="player-audio1">
+                    <div class="time-display">
+                        <span class="current-time" data-audio="audio1">0:00</span>
+                        /
+                        <span class="duration" data-audio="audio1">0:00</span>
+                    </div>
+                    
+                    <input type="range" class="progress-bar" data-audio="audio1" value="0" min="0" step="0.1">
+
+                    <div class="controls">
+                        <button class="control-btn rewind" data-audio="audio1"><i class="fas fa-backward"></i></button>
+                        <button class="control-btn toggle" data-audio="audio1"><i class="fas fa-pause"></i></button>
+                        <button class="control-btn forward" data-audio="audio1"><i class="fas fa-forward"></i></button>
+                    </div>
+                </div>
+
+                <audio id="audio1" src="music\Kyle_-_Breathe.wav"></audio>
+            </div>
+        </div>
+
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item">
+            <div class="image-container">
+                <img src="images\Vanessa_Carlton_-_A_Thousand_Miles_-_Kyle_Remix_-_CD.png" alt="Portfolio Item 2">
+                
+                <button class="play-button" data-audio="audio2"><i class="fas fa-play"></i></button>
+
+                <div class="custom-player" id="player-audio2">
+                    <div class="time-display">
+                        <span class="current-time" data-audio="audio2">0:00</span>
+                        /
+                        <span class="duration" data-audio="audio2">0:00</span>
+                    </div>
+                    
+                    <input type="range" class="progress-bar" data-audio="audio2" value="0" min="0" step="0.1">
+
+                    <div class="controls">
+                        <button class="control-btn rewind" data-audio="audio2"><i class="fas fa-backward"></i></button>
+                        <button class="control-btn toggle" data-audio="audio2"><i class="fas fa-pause"></i></button>
+                        <button class="control-btn forward" data-audio="audio2"><i class="fas fa-forward"></i></button>
+                    </div>
+                </div>
+
+                <audio id="audio2" src="music\Vanessa_Carlton_-_A_Thousand_Miles_-_Kyle_Remix.wav"></audio>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <a class="kyle" href="index.html">Kyle</a>
+            <div>
+                <h4>Follow Me</h4>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/custom_controls.js"></script>
+    <script src="js/progress_bar.js"></script>
+
+</body>
+</html>
